@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.imgCnt{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    /* border: 2px solid orange; */
+    /* animation-name: x2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both; */
+}
+
+.sizing{
+    flex-direction: row;
+    animation-name: x2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes x2{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);border-radius: 50px;}
+    100% {transform: scale(1);}    
+}
+
+.imgCnt1{
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    /* border: 2px solid orange; */
+    /* transition: all 2s ease; */
+}
+
+.sizing1{
+    transition: all 2s ease;
+}
+
+.sizing1:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    border-radius: 100px;
+}
+
+.navbar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background: grey;
+    height: 300px;
+    width: 200px;
+    /* justify-content: left; */
+    align-items: center;
+    top: 0px;
+    border-radius: 0 5px 5px 0;
+    transition: all 1s ease;
+    left: -170px;
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: blue; */
+    width: 160px;
+    margin-left: 10px;
+}
+
+.col2{
+    display: flex;
+    flex-direction: row;
+    /* transform: rotate(90deg); */
+    height: 300px;
+    width: 30px;
+    /* background: green; */
+    padding-left: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.but{
+    height: 50px;
+    width: 160px;
+    /* background: white; */
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: default; 
+    color: white;
+}
+
+.but >  span {
+    margin-left: 5px;
+}
+
+.open{
+    transform: rotate(90deg);
+    color: white;
+}
+
+.but:hover{
+    background: white;
+    color: black;
+}
+
+#cube{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: red;
+    top: 300px;
+}
+
+.myform{
+    position: relative;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 150px;
+    background: lightgrey;
+    left: calc(50% - 350px);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.part{
+    display: flex;
+    flex-direction: row;
+    height: 35px; 
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.field1 > input{
+    border: none;
+    border-radius: 5px;
+    border-left: 5px solid rgb(46, 110, 230);
+    height: 25px;
+    width: 325px;
+}
+
+.field2 > input{
+    border: none;
+    border-radius: 5px;
+    border-left: 5px solid rgb(255, 163, 64);
+    height: 25px;
+    width: 100px;
+}
+
+.part2{
+    justify-content: left;
+    margin-left: 12.5px;
+}
+
+.field3 > input{
+    border: none;
+    border-radius: 5px;
+    border-left: 5px solid rgb(255, 64, 64);
+    height: 25px;
+    width: 325px;
+}
+
+.part3{
+    justify-content: left;
+    margin-left: 12.5px;
+}
+
