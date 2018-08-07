@@ -32,35 +32,25 @@
 
 
     <div class="myform">
-        <div class="part">
-            
-            <div class="field1">
-                <input type="text" placeholder="Имя">
-            </div>
-            
-            <div class="field1">
-                <input type="text" placeholder="Фамилия">
-            </div>
-        
-        </div>
-        <div class="part part2">
-            <div class="field2">
-                <input type="text" placeholder="Возраст">
+        <form>   
+            <div class="part">
+                <input type="text" class="field f1" placeholder="Имя" required title="Только буквы">
+                <input type="text" class="field f1" placeholder="Фамилия" required title="Только буквы">
             </div>
 
-        </div>
-        <div class="part part3">
-                <div class="field3">
-                    <input type="text" placeholder="Специальность">
-                </div>
-    
+            <div class="part part2">
+                    <input type="number" class="field f2" placeholder="Возраст" required title="Только цифры">
             </div>
 
-    </div>
+            <div class="part part2">
+                <input type="text" class="field f3" placeholder="Специальность" required title="Только буквы">
+            </div>
 
+            <div class="submit">
+                <button type="button" class="subbut" onclick="check()">Подтвердить</button>
+            </div>
+        </form>
 
-
-
-    
+    </div>    
 </body>
 </html>

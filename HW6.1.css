@@ -141,23 +141,6 @@ body{
     height: 35px; 
     justify-content: space-around;
     align-items: center;
-    
-}
-
-.field1 > input{
-    border: none;
-    border-radius: 5px;
-    border-left: 5px solid rgb(46, 110, 230);
-    height: 25px;
-    width: 325px;
-}
-
-.field2 > input{
-    border: none;
-    border-radius: 5px;
-    border-left: 5px solid rgb(255, 163, 64);
-    height: 25px;
-    width: 100px;
 }
 
 .part2{
@@ -165,16 +148,55 @@ body{
     margin-left: 12.5px;
 }
 
-.field3 > input{
+
+.field{
     border: none;
     border-radius: 5px;
-    border-left: 5px solid rgb(255, 64, 64);
     height: 25px;
-    width: 325px;
 }
 
-.part3{
-    justify-content: left;
-    margin-left: 12.5px;
+
+.f1{
+    width: 325px;
+    border-left: 5px solid rgb(46, 110, 230);
 }
+
+.f2{
+    border-left: 5px solid rgb(255, 163, 64);
+    width: 100px;
+}
+
+.f3{
+    border-left: 5px solid rgb(255, 64, 64);
+    width:325px;
+}
+
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    height: 35px; 
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.subbut{
+    border: none;
+    border-radius: 5px;
+    border: 2px solid rgb(73, 181, 38);
+    background: white;
+    height: 25px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.subbut:hover{
+    background: rgb(236, 245, 237);
+}
+
+
+
 
